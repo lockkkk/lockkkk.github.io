@@ -165,3 +165,8 @@ a:visited {
   text-decoration: none;
   color: #9b0000;
 }
+
+span.main-author {
+  font-weight: bold;
+}
+
