@@ -4,4 +4,4 @@ Hi, I’m Jiaxin Lin. I’m currently a graduate student at the University of Te
 
 Additionly, I love digital painting, you can see [my artwork on Pixiv](#section-artwork).
 
-Contact: jlin357 AT wisc.edu
+Contact: jxlin AT utexas.edu
