@@ -1,5 +1,9 @@
 # Use file for local file and fileUrl for remote fiel
-
+-
+  name: "Ringleader: Efficiently Offloading Intra-Server Orchestration to NICs"
+  authors: Jiaxin Lin, Adney Cardoza, Tarannum Khan, Yeonju Ro, Brent Stephens, Hassan Wassel, Aditya Akella
+  site: 20th USENIX Symposium on Networked Systems Design and Implementation (NSDI ‘23)
+  link: https://www.usenix.org/conference/nsdi23
 -
   name: "PANIC: A High-Performance Programmable NIC for Multi-tenant Networks"
   authors: Jiaxin Lin, Kiran Patel, Brent Stephens, Anirudh Sivaraman, Aditya Akella
