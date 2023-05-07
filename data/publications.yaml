@@ -4,7 +4,6 @@
   authors: Jiaxin Lin, Tao Ji, Xiangpeng Hao, Hokeun Cha, Yanfang Le, Xiangyao Yu, Aditya Akella 
   site: ACM SIGMETRICS 2023 (SIGMETRICS ‘23)
   link: https://www.sigmetrics.org/sigmetrics2023/
-  fileUrl: https://www.sigmetrics.org/sigmetrics2023/accepted_papers.html
 -
   name: "Ringleader: Efficiently Offloading Intra-Server Orchestration to NICs"
   authors: Jiaxin Lin, Adney Cardoza, Tarannum Khan, Yeonju Ro, Brent Stephens, Hassan Wassel, Aditya Akella
