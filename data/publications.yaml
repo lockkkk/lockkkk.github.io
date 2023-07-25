@@ -9,12 +9,14 @@
   authors: Jiaxin Lin, Adney Cardoza, Tarannum Khan, Yeonju Ro, Brent Stephens, Hassan Wassel, Aditya Akella
   site: 20th USENIX Symposium on Networked Systems Design and Implementation (NSDI ‘23)
   link: https://www.usenix.org/conference/nsdi23
+  artifact: https://github.com/utnslab/RingleaderNIC
   fileUrl: https://utns.cs.utexas.edu/papers/ringleader.pdf
 -
   name: "PANIC: A High-Performance Programmable NIC for Multi-tenant Networks"
   authors: Jiaxin Lin, Kiran Patel, Brent Stephens, Anirudh Sivaraman, Aditya Akella
   site: 14th USENIX Symposium on Operating Systems Design and Implementation (OSDI ‘20)
   link: https://www.usenix.org/conference/osdi20/presentation/lin
+  artifact: https://bitbucket.org/uw-madison-networking-research/panic_osdi20_artifact/src/master/
   fileUrl: http://wisr.cs.wisc.edu/papers/osdi20-panic.pdf 
 -
   name: "DLBooster: Boosting End-to-End Deep Learning Workflow with Offloading Data Preprocessing Pipelines"
