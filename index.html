@@ -2,7 +2,7 @@
 title: Jiaxin Lin's Homepage
 ---
 
-<img src="/images/photo.jpg" style="max-width: 30%;float: right; margin: 10px;" />
+<img id="photo" src="/images/photo.jpg" />
 $about$
 
 <!--
@@ -39,18 +39,20 @@ $about$
     $endfor$
 </ul>
 
-<h3>Work Experience</h3>
+<h3 id="section-experience">Work Experience</h3>
 <ul>
     $for(experience)$
         <li>$item$</li>
     $endfor$
 </ul>
 
+<!--
 <h3 id="section-artwork">Artworks</h3>
-<!-- Embedded Images! -->
 <div class="pixiv-gallery">
     $for(artworks)$
     <div class="pixiv-embed" data-id="$item$" data-size="medium" data-border="off"></div>
     $endfor$
 </div>
-<p>You can find more on my home page in <a href="https://www.pixiv.net/users/4821145"><strong>Pixiv</strong></a></p>
+-->
+
+<!-- <p>You can find more on my home page in <a href="https://www.pixiv.net/users/4821145"><strong>Pixiv</strong></a></p> -->
