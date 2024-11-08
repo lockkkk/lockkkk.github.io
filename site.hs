@@ -98,6 +98,7 @@ main = do
                 -- data
                 publications <- parseYaml =<< loadBody "data/publications.yaml"
                 experience   <- parseYaml =<< loadBody "data/experience.yaml"
+                service      <- parseYaml =<< loadBody "data/service.yaml"
                 artworks     <- parseYaml =<< loadBody "data/artworks.yaml" :: Compiler [Integer]
 
                 -- news
@@ -106,6 +107,7 @@ main = do
                 let indexCtx = listField  "publications" pubCtx         (wrapItemList publications)
                             <> listField  "news"         postCtx        (return news)
                             <> listField  "experience"   (listCtx id)   (wrapItemList experience)
+                            <> listField  "service"      (listCtx id)   (wrapItemList service)
                             <> listField  "artworks"     (listCtx show) (wrapItemList artworks)
                             <> constField "about"        about
                             <> defaultContext
