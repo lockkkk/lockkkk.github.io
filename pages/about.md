@@ -10,5 +10,6 @@ Hi, I’m Jiaxin Lin. I’m currently a graduate student at the University of Te
 - NSDI Student Travel Grant (2023, 2024).
 
 <!-- Additionly, I love digital painting, you can see [my artwork on Pixiv](#section-artwork). -->
-
 Contact: jxlin AT utexas.edu
+
+<span style="color:red">**I am on the academic job market this year.**</span>
