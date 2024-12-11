@@ -1,5 +1,10 @@
 # Use file for local file and fileUrl for remote fiel
 -
+  name: "Portable and High-Performance SmartNIC Programs with Alkali"
+  authors: Jiaxin Lin*, Zhiyuan Guo*, Mihir Shah, Tao Ji, Yiying Zhang, Daehyeok Kim, Aditya Akella
+  site: The 22nd USENIX Symposium on Networked Systems Design and Implementation (NSDI '25)
+  link: https://www.usenix.org/conference/nsdi25
+-
   name: "Balancing SDN Control Plane Availability and Traffic Engineering Efficiency in Data Centers"
   authors: Brian Chang, Keqiang He, Shawn Chen, Jiaxin Lin, Mingyang Zhang, Wenfei Wu, Aditya Akella
   site: 32nd IEEE International Conference on Network Protocols (ICNP'24)
@@ -13,14 +18,14 @@
 -
   name: "Ringleader: Efficiently Offloading Intra-Server Orchestration to NICs"
   authors: Jiaxin Lin, Adney Cardoza, Tarannum Khan, Yeonju Ro, Brent Stephens, Hassan Wassel, Aditya Akella
-  site: 20th USENIX Symposium on Networked Systems Design and Implementation (NSDI ‘23)
+  site: 20th USENIX Symposium on Networked Systems Design and Implementation (NSDI '23)
   link: https://www.usenix.org/conference/nsdi23
   artifact: https://github.com/utnslab/RingleaderNIC
   fileUrl: https://www.usenix.org/conference/nsdi23/presentation/lin
 -
-  name: "Towards Accelerating Data Intensive Application’s Shuffle Process Using SmartNICs"
+  name: "Towards Accelerating Data Intensive Application's Shuffle Process Using SmartNICs"
   authors: Jiaxin Lin, Tao Ji, Xiangpeng Hao, Hokeun Cha, Yanfang Le, Xiangyao Yu, Aditya Akella 
-  site: ACM SIGMETRICS 2023 (SIGMETRICS ‘23)
+  site: ACM SIGMETRICS 2023 (SIGMETRICS'23)
   link: https://www.sigmetrics.org/sigmetrics2023/
   fileUrl: https://dl.acm.org/doi/10.1145/3589980
 -
