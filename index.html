@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="google-site-verification" content="gAb1tZ3OCjQkDVI6xUgK_sgjQ1XzMvZujFDEgXastTk" />
         <title>Jiaxin Lin's Homepage</title>
         <link rel="stylesheet" href="./css/default.css" />
         <script src="https://kit.fontawesome.com/fa2b4cc2be.js" crossorigin="anonymous"></script>
@@ -12,45 +13,47 @@
     <body>
         <header>
             <div class="logo">
-                <a href="./">Jiaxin Lin's Homepage</a>
+                <a href="./">Jiaxin Lin</a>
             </div>
             <nav>
                 <a href="#section-publication">Publications</a>
-                <!-- <a href="#section-artwork">Artwork</a> -->
                 <a href="#section-experience">Experience</a>
+                <a href="#section-award">Award</a>
                 <a href="#section-service">Service</a>
             </nav>
         </header>
 
         <main role="main">
-            <img id="photo" src="./images/photo.jpg" />
-<p>Hi, I’m Jiaxin Lin. I’m currently a graduate student at the University of Texas Austin, major in Computer Science. I got my bachelor degree from Beihang University, Beijing in 2019. I am now a part of the <a href="https://utns.cs.utexas.edu/">University of Texas Networked Systems (UTNS)</a> Lab, and my adviser is <a href="http://pages.cs.wisc.edu/~akella/">Aditya Akella</a>. Specifically, I am interested in <strong>computer network</strong> and <strong>system</strong>, especially in programmable hardware, data center networks, big data system, and SmartNIC.</p>
-<p><strong>Awards</strong>:</p>
-<ul>
-<li><a href="https://risingstars-eecs.mit.edu/participants/?y=2024&amp;search_page=2">2024 MIT EECS Rising Stars</a>.</li>
-<li><a href="https://research.google/outreach/phd-fellowship/recipients/">2023 Google Ph.D. Fellowship Winner</a>.</li>
-<li><a href="https://research.fb.com/fellows/lin-jiaxin/">2021 Meta Ph.D. Fellowship Winner</a>.</li>
-<li>Professional Development Award, UT Austin (2023, 2024).</li>
-<li>SIGCOMM Student Travel Grant (2023).</li>
-<li>NSDI Student Travel Grant (2023, 2024).</li>
-</ul>
+            <div id="intro">
+    <div id="intro-text">
+        <p>Hi, I’m Jiaxin Lin. I’m currently a graduate student at the University of Texas Austin, major in Computer Science. I got my bachelor degree from Beihang University, Beijing in 2019. I am now a part of the <a href="https://utns.cs.utexas.edu/">University of Texas Networked Systems (UTNS)</a> Lab, and my adviser is <a href="http://pages.cs.wisc.edu/~akella/">Aditya Akella</a>. Specifically, I am interested in <strong>computer network</strong> and <strong>system</strong>, especially in programmable hardware, data center networks, big data system, and SmartNIC.</p>
+<p>I’m a <a href="https://risingstars-eecs.mit.edu/participants/?y=2024&amp;search_page=2">2024 MIT EECS Rising Star</a>, a <a href="https://research.google/outreach/phd-fellowship/recipients/">2023 Google Ph.D. Fellowship Winner</a> and a <a href="https://research.fb.com/fellows/lin-jiaxin/">2021 Meta Ph.D. Fellowship Winner</a>.</p>
 <!-- Additionly, I love digital painting, you can see [my artwork on Pixiv](#section-artwork). -->
 <p>Contact: jxlin AT utexas.edu</p>
 <p><span style="color:red"><strong>I am on the academic job market this year.</strong></span></p>
+    </div>
+    <img id="photo" src="./images/photo.jpg" />
+</div>
 
-<!--
-<h2>News</h2>
-<ul>
+<h2 id="section-news">News</h2>
+<div>
     
-        <li>
-            <p>New website built!</p> - August 25, 2020
-        </li>
+    <div>
+        <span style="font-weight:bold;">[Dec 2024]</span>
+        &nbsp;
+        <span><span>Our Alkali paper got accepted to <a target="_blank" href="https://www.usenix.org/conference/nsdi25">NSDI 25</a>!</span></span>
+    </div>
     
-</ul>
--->
+    <div>
+        <span style="font-weight:bold;">[Sep 2024]</span>
+        &nbsp;
+        <span><span>I received <a target="_blank" href="https://risingstars-eecs.mit.edu/participants/?y=2024&amp;search_page=2">2024 MIT EECS Rising Star</a> Award!</span></span>
+    </div>
+    
+</div>
 
-<h3 id="section-publication">Publications</h3>
-<ul>
+<h2 id="section-publication">Publications</h2>
+<ul class="pubs">
     
         <li>
             <h4>
@@ -182,55 +185,164 @@
     
 </ul>
 
-<h3 id="section-experience">Work Experience</h3>
-<ul>
+<h2 id="section-experience">Work Experience</h2>
+<div class="exps">
     
-        <li>Teaching Assistant, UT Austin, Advanced Topics in Computer Networks (CS395T) (2024 Fall)</li>
+        <div class="exp-entry flex-row">
+            <img src="./images/logo/utaustin.svg" class="exp-logo" />
+            <div style="flex: 1">
+                <div class="exp-location">Advanced Topics in Computer Networks (CS395T), UT Austin</div>
+                <div class="flex-row">
+                    <span>Teaching Assistant</span><span class="pull-right">2024 Fall</span>
+                </div>
+            </div>
+        </div>
     
-        <li>Research Intern, Google, System Research Group (SRG) (2023 - 2024)</li>
+        <div class="exp-entry flex-row">
+            <img src="./images/logo/google.svg" class="exp-logo" />
+            <div style="flex: 1">
+                <div class="exp-location">Google, System Research Group (SRG)</div>
+                <div class="flex-row">
+                    <span>Research Intern</span><span class="pull-right">2023 - 2024</span>
+                </div>
+            </div>
+        </div>
     
-        <li>Research Intern, Google, Network Infrastructure Team (2021 Summer and 2022 Summer)</li>
+        <div class="exp-entry flex-row">
+            <img src="./images/logo/google.svg" class="exp-logo" />
+            <div style="flex: 1">
+                <div class="exp-location">Google, Network Infrastructure Team</div>
+                <div class="flex-row">
+                    <span>Research Intern</span><span class="pull-right">2021 Summer and 2022 Summer</span>
+                </div>
+            </div>
+        </div>
     
-        <li>Research Assistant, UT Austin, Internet and Systems Research Group (Sep 2019 - Current)</li>
+        <div class="exp-entry flex-row">
+            <img src="./images/logo/utaustin.svg" class="exp-logo" />
+            <div style="flex: 1">
+                <div class="exp-location">UT Austin, Internet and Systems Research Group</div>
+                <div class="flex-row">
+                    <span>Research Assistant</span><span class="pull-right">Sep 2019 - Current</span>
+                </div>
+            </div>
+        </div>
     
-        <li>Research Intern, MSRA (Microsoft Research Asia), Network Research Group (Sep 2018 - Jun 2019)</li>
+        <div class="exp-entry flex-row">
+            <img src="./images/logo/microsoft.svg" class="exp-logo" />
+            <div style="flex: 1">
+                <div class="exp-location">MSRA (Microsoft Research Asia), Network Research Group</div>
+                <div class="flex-row">
+                    <span>Research Intern</span><span class="pull-right">Sep 2018 - Jun 2019</span>
+                </div>
+            </div>
+        </div>
     
-        <li>Research Assistant, Tsinghua University, Automatic Driving Laboratory (Apr 2018 - Sep 2018)</li>
+        <div class="exp-entry flex-row">
+            <img src="./images/logo/thu.svg" class="exp-logo" />
+            <div style="flex: 1">
+                <div class="exp-location">Tsinghua University, Automatic Driving Laboratory</div>
+                <div class="flex-row">
+                    <span>Research Assistant</span><span class="pull-right">Apr 2018 - Sep 2018</span>
+                </div>
+            </div>
+        </div>
     
-        <li>Teaching Assistant, Beihang University, Computer Architecture (Jun 2017 - Feb 2018)</li>
-    
-</ul>
-
-<h3 id="section-service">Service</h3>
-<ul>
-    
-        <li>Transactions Reviewer, IEEE TVLSI (2024)</li>
-    
-        <li>Pre-Review Task Force, NSDI (2024)</li>
-    
-        <li>External Review Committee, ATC (2024)</li>
-    
-        <li>External Review Committee, ASPLOS (2023)</li>
-    
-</ul>
-
-
-<!--
-<h3 id="section-artwork">Artworks</h3>
-<div class="pixiv-gallery">
-    
-    <div class="pixiv-embed" data-id="89690374" data-size="medium" data-border="off"></div>
-    
-    <div class="pixiv-embed" data-id="64936167" data-size="medium" data-border="off"></div>
-    
-    <div class="pixiv-embed" data-id="79079407" data-size="medium" data-border="off"></div>
-    
-    <div class="pixiv-embed" data-id="78495539" data-size="medium" data-border="off"></div>
+        <div class="exp-entry flex-row">
+            <img src="./images/logo/beihang.svg" class="exp-logo" />
+            <div style="flex: 1">
+                <div class="exp-location">Beihang University, Computer Architecture</div>
+                <div class="flex-row">
+                    <span>Teaching Assistant</span><span class="pull-right">Jun 2017 - Feb 2018</span>
+                </div>
+            </div>
+        </div>
     
 </div>
--->
 
-<!-- <p>You can find more on my home page in <a href="https://www.pixiv.net/users/4821145"><strong>Pixiv</strong></a></p> -->
+<h2 id="section-award">Awards</h2>
+<div class="exps">
+    
+        <div class="timed-entry flex-row">
+            <span class="exp-location">
+            
+            <a href="https://risingstars-eecs.mit.edu/participants/?y=2024&search_page=2" target="_blank">MIT EECS Rising Stars</a>
+            
+            </span>
+            <span class="pull-right">2024</span>
+        </div>
+    
+        <div class="timed-entry flex-row">
+            <span class="exp-location">
+            
+            <a href="https://research.google/outreach/phd-fellowship/recipients/" target="_blank">Google Ph.D. Fellowship Winner</a>
+            
+            </span>
+            <span class="pull-right">2023</span>
+        </div>
+    
+        <div class="timed-entry flex-row">
+            <span class="exp-location">
+            
+            <a href="https://research.fb.com/fellows/lin-jiaxin/" target="_blank">Meta Ph.D. Fellowship Winner</a>
+            
+            </span>
+            <span class="pull-right">2021</span>
+        </div>
+    
+        <div class="timed-entry flex-row">
+            <span class="exp-location">
+            
+            Professional Development Award, UT Austin
+            
+            </span>
+            <span class="pull-right">2023, 2024</span>
+        </div>
+    
+        <div class="timed-entry flex-row">
+            <span class="exp-location">
+            
+            SIGCOMM Student Travel Grant
+            
+            </span>
+            <span class="pull-right">2023</span>
+        </div>
+    
+        <div class="timed-entry flex-row">
+            <span class="exp-location">
+            
+            NSDI Student Travel Grant
+            
+            </span>
+            <span class="pull-right">2023, 2024</span>
+        </div>
+    
+</div>
+
+<h2 id="section-services">Services</h2>
+<div class="exps">
+    
+        <div class="timed-entry flex-row" style="gap:10px;">
+            <span class="exp-location">Transactions Reviewer</span>
+            <span class="pull-right">IEEE TVLSI 2024</span>
+        </div>
+    
+        <div class="timed-entry flex-row" style="gap:10px;">
+            <span class="exp-location">Pre-Review Task Force</span>
+            <span class="pull-right">NSDI 2024</span>
+        </div>
+    
+        <div class="timed-entry flex-row" style="gap:10px;">
+            <span class="exp-location">External Review Committee</span>
+            <span class="pull-right">ATC 2024</span>
+        </div>
+    
+        <div class="timed-entry flex-row" style="gap:10px;">
+            <span class="exp-location">External Review Committee</span>
+            <span class="pull-right">ASPLOS 2023</span>
+        </div>
+    
+</div>
 
         </main>
 
