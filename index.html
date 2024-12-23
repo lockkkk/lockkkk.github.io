@@ -2,22 +2,26 @@
 title: Jiaxin Lin's Homepage
 ---
 
-<img id="photo" src="/images/photo.jpg" />
-$about$
+<div id="intro">
+    <div id="intro-text">
+        $about$
+    </div>
+    <img id="photo" src="/images/photo.jpg"/>
+</div>
 
-<!--
-<h2>News</h2>
-<ul>
+<h2 id="section-news">News</h2>
+<div>
     $for(news)$
-        <li>
-            $body$ - $date$
-        </li>
+    <div>
+        <span style="font-weight:bold;">[$date$]</span>
+        &nbsp;
+        <span>$body$</span>
+    </div>
     $endfor$
-</ul>
--->
+</div>
 
-<h3 id="section-publication">Publications</h3>
-<ul>
+<h2 id="section-publication">Publications</h2>
+<ul class="pubs">
     $for(publications)$
         <li>
             <h4>
@@ -39,28 +43,43 @@ $about$
     $endfor$
 </ul>
 
-<h3 id="section-experience">Work Experience</h3>
-<ul>
+<h2 id="section-experience">Work Experience</h2>
+<div class="exps">
     $for(experience)$
-        <li>$item$</li>
-    $endfor$
-</ul>
-
-<h3 id="section-service">Service</h3>
-<ul>
-    $for(service)$
-        <li>$item$</li>
-    $endfor$
-</ul>
-
-
-<!--
-<h3 id="section-artwork">Artworks</h3>
-<div class="pixiv-gallery">
-    $for(artworks)$
-    <div class="pixiv-embed" data-id="$item$" data-size="medium" data-border="off"></div>
+        <div class="exp-entry flex-row">
+            <img src="$logo$" class="exp-logo"/>
+            <div style="flex: 1">
+                <div class="exp-location">$location$</div>
+                <div class="flex-row">
+                    <span>$title$</span><span class="pull-right">$time$</span>
+                </div>
+            </div>
+        </div>
     $endfor$
 </div>
--->
 
-<!-- <p>You can find more on my home page in <a href="https://www.pixiv.net/users/4821145"><strong>Pixiv</strong></a></p> -->
+<h2 id="section-award">Awards</h2>
+<div class="exps">
+    $for(awards)$
+        <div class="timed-entry flex-row">
+            <span class="exp-location">
+            $if(link)$
+            <a href="$link$" target="_blank">$text$</a>
+            $else$
+            $text$
+            $endif$
+            </span>
+            <span class="pull-right">$time$</span>
+        </div>
+    $endfor$
+</div>
+
+<h2 id="section-services">Services</h2>
+<div class="exps">
+    $for(services)$
+        <div class="timed-entry flex-row" style="gap:10px;">
+            <span class="exp-location">$text$</span>
+            <span class="pull-right">$location$ $time$</span>
+        </div>
+    $endfor$
+</div>

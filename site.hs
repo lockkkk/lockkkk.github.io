@@ -1,8 +1,10 @@
 --------------------------------------------------------------------------------
 {-# LANGUAGE OverloadedStrings #-}
+{-# LANGUAGE DuplicateRecordFields, TypeApplications #-}
 {-# LANGUAGE DeriveGeneric, DeriveAnyClass #-}
 import           Data.Monoid (mappend)
 import           Hakyll
+import           Text.Pandoc.Options (def, WriterOptions(..), TopLevelDivision(..))
 
 import qualified GHC.IO.Encoding as E
 import           Data.Yaml
@@ -15,6 +17,8 @@ import           Control.Arrow
 import           Control.Applicative
 
 --------------------------------------------------------------------------------
+-- Configs
+myName = "Jiaxin Lin"
 
 -- Optional Field, if we get nothing we got an mempty
 optionField :: String -> (Item a -> Compiler (Maybe String)) -> Context a
@@ -42,10 +46,10 @@ getFileUrl a = fmap ("/files/" ++) (file a) <|> fileUrl a
 boldAuthor au = replace au ("<span class=\"main-author\">" ++ au ++ "</span>")
 
 pubCtx = field       "name"     (mapBody name)
-      <> field       "authors"  (mapBody $ boldAuthor "Jiaxin Lin" . authors)
+      <> field       "authors"  (mapBody $ boldAuthor myName. authors)
       <> optionField "site"     (mapBody site) 
       <> optionField "file"     (mapBody getFileUrl) 
-      <> optionField "link"     (mapBody link) 
+      <> optionField "link"     (mapBody (link :: Publication -> Maybe String)) 
       <> optionField "note"     (mapBody note) 
       <> optionField "artifact" (mapBody artifact) 
 
@@ -56,10 +60,24 @@ data Experience = Experience {
     time :: String,
     logo :: String
 } deriving (Generic, FromJSON)
-expCtx = field "location" (mapBody location)
+
+expCtx = field "location" (mapBody (location :: Experience -> String))
       <> field "title"    (mapBody title)
-      <> field "time"     (mapBody time)
+      <> field "time"     (mapBody (time :: Experience -> String))
       <> field "logo"     (mapBody $ ("/images/logo/" ++) . logo)
+
+-- Defined the awards and context
+data TimedEntry = TimedEntry {
+    time :: String,
+    text :: String,
+    location :: Maybe String,
+    link :: Maybe String
+} deriving (Generic, FromJSON)
+
+timedCtx = field "time"           (mapBody (time :: TimedEntry -> String))
+        <> field "text"           (mapBody text)
+        <> optionField "location" (mapBody (location :: TimedEntry -> Maybe String))
+        <> optionField "link"     (mapBody (link :: TimedEntry -> Maybe String))
 
 parseYaml :: FromJSON a => String -> Compiler a
 parseYaml = liftEither . left (return . show) . decodeEither' . fromString
@@ -98,7 +116,8 @@ main = do
                 -- data
                 publications <- parseYaml =<< loadBody "data/publications.yaml"
                 experience   <- parseYaml =<< loadBody "data/experience.yaml"
-                service      <- parseYaml =<< loadBody "data/service.yaml"
+                awards       <- parseYaml =<< loadBody "data/awards.yaml"
+                services     <- parseYaml =<< loadBody "data/services.yaml"
                 artworks     <- parseYaml =<< loadBody "data/artworks.yaml" :: Compiler [Integer]
 
                 -- news
@@ -106,8 +125,9 @@ main = do
 
                 let indexCtx = listField  "publications" pubCtx         (wrapItemList publications)
                             <> listField  "news"         postCtx        (return news)
-                            <> listField  "experience"   (listCtx id)   (wrapItemList experience)
-                            <> listField  "service"      (listCtx id)   (wrapItemList service)
+                            <> listField  "experience"   expCtx         (wrapItemList experience)
+                            <> listField  "awards"       timedCtx       (wrapItemList awards)
+                            <> listField  "services"     timedCtx       (wrapItemList services)
                             <> listField  "artworks"     (listCtx show) (wrapItemList artworks)
                             <> constField "about"        about
                             <> defaultContext
@@ -120,14 +140,19 @@ main = do
         -- resource files
         match "templates/*" $ compile templateBodyCompiler
 
-        match "news/*"  $ compile $ pandocCompiler >>= relativizeUrls 
-        match "pages/*" $ compile $ pandocCompiler >>= relativizeUrls 
+        match "news/*"  $ compile $ pandocCompiler >>= relativizeUrls <$> (fmap inlineParagraph)
+        match "pages/*" $ compile $ pandocCompiler >>= relativizeUrls
 
         match "data/*" $ compile getResourceString
 
 
 --------------------------------------------------------------------------------
+inlineParagraph :: String -> String
+inlineParagraph = replace "<p>" "<span>"
+                . replace "</p>" "</span>"
+                . replace "<a " "<a target=\"_blank\" "
+
 postCtx :: Context String
 postCtx =
-    dateField "date" "%B %e, %Y" `mappend`
+    dateField "date" "%b %Y" `mappend`
     defaultContext
