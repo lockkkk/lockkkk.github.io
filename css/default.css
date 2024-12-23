@@ -1,3 +1,14 @@
+/* Theme colors. fit university style */
+a:link {
+  text-decoration: none;
+  color: #9b0000;
+}
+
+a:visited {
+  text-decoration: none;
+  color: #9b0000;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -20,7 +31,7 @@ nav a {
   font-weight: bold;
   color: black;
   text-decoration: none;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 }
 
 footer {
@@ -51,11 +62,22 @@ article .header {
   text-decoration: none;
 }
 
+/* Photo and intro */
+#intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 #photo {
-  max-width: 40%;
-  max-height: 240px;
+  max-width: 50%;
+  max-height: 300px;
   margin: auto 10px;
-  float: right;
+  order: 1;
+}
+
+#intro-text {
+  order: 2;
 }
 
 body {
@@ -64,10 +86,10 @@ body {
   padding: 0 5%;
 }
 header {
-  margin: 4.2rem 0;
+  margin: 3rem 0;
 }
 nav {
-  margin: 0 auto 3rem;
+  margin: 0 auto 1rem;
   text-align: center;
 }
 footer {
@@ -75,7 +97,7 @@ footer {
 }
 .logo {
   text-align: center;
-  margin: 1rem auto 3rem;
+  margin: 1rem auto 1rem;
 }
 .logo a {
   font-size: 2.4rem;
@@ -86,14 +108,13 @@ nav a {
 }
 
 @media (min-width: 640px) {
-
   body {
     max-width: 960px;
     margin: 0 auto;
     padding: 0;
   }
   header {
-    margin: 0 0 3rem;
+    margin: 0 0 1.6rem;
     padding: 1.2rem 0;
   }
   nav {
@@ -113,11 +134,19 @@ nav a {
   }
   .logo a {
     float: left;
-    font-size: 1.8rem;
+    font-size: 2.2rem;
+  }
+
+  #intro {
+    flex-direction: row;
+    gap: 3em;
+  }
+  #photo {
+    order: 3;
   }
 }
 
-/* Pixiv Links */
+/* Add by depct */
 .pixiv-embed-title {
   display: none;
 }
@@ -133,18 +162,38 @@ nav a {
   overflow-x: scroll;
 }
 
-/* Theme colors. fit university style */
-a:link {
-  text-decoration: none;
-  color: #9b0000;
-}
-
-a:visited {
-  text-decoration: none;
-  color: #9b0000;
-}
-
 span.main-author {
   font-weight: bold;
 }
 
+/* flex box for experience */
+.exps {
+    padding: 0 0.5em;
+}
+.exp-location {
+    font-weight: bold;
+}
+.exp-logo {
+    height: 2.2em;
+    margin-right: 0.75em;
+}
+.flex-row {
+    display: flex;
+    align-items: center;
+}
+.pull-right {
+    margin-left: auto;
+}
+.exp-entry {
+    margin-bottom: 0.75em;
+}
+.exp-entry:last-child {
+    margin-bottom: 0;
+}
+
+.timed-entry {
+    margin-bottom: 0.25em;
+}
+.timed-entry:last-child {
+    margin-bottom: 0;
+}

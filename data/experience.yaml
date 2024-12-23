@@ -1,7 +1,29 @@
-- Teaching Assistant, UT Austin, Advanced Topics in Computer Networks (CS395T) (2024 Fall)
-- Research Intern, Google, System Research Group (SRG) (2023 - 2024)
-- Research Intern, Google, Network Infrastructure Team (2021 Summer and 2022 Summer)
-- Research Assistant, UT Austin, Internet and Systems Research Group (Sep 2019 - Current)
-- Research Intern, MSRA (Microsoft Research Asia), Network Research Group (Sep 2018 - Jun 2019)
-- Research Assistant, Tsinghua University, Automatic Driving Laboratory (Apr 2018 - Sep 2018)
-- Teaching Assistant, Beihang University, Computer Architecture (Jun 2017 - Feb 2018)
+-
+  title: Teaching Assistant
+  location: Advanced Topics in Computer Networks (CS395T), UT Austin
+  time: 2024 Fall
+  logo: utaustin.svg
+- title: Research Intern
+  location: Google, System Research Group (SRG)
+  time: 2023 - 2024
+  logo: google.svg
+- title: Research Intern
+  location: Google, Network Infrastructure Team
+  time: 2021 Summer and 2022 Summer
+  logo: google.svg
+- title: Research Assistant
+  location: UT Austin, Internet and Systems Research Group
+  time: Sep 2019 - Current
+  logo: utaustin.svg
+- title: Research Intern
+  location: MSRA (Microsoft Research Asia), Network Research Group
+  time: Sep 2018 - Jun 2019
+  logo: microsoft.svg
+- title: Research Assistant
+  location: Tsinghua University, Automatic Driving Laboratory
+  time: Apr 2018 - Sep 2018
+  logo: thu.svg
+- title: Teaching Assistant
+  location: Beihang University, Computer Architecture
+  time: Jun 2017 - Feb 2018
+  logo: beihang.svg
