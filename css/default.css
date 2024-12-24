@@ -197,3 +197,10 @@ span.main-author {
 .timed-entry:last-child {
     margin-bottom: 0;
 }
+
+.round-border-box {
+  border: 2px solid #bf5700;
+  border-radius: 8px;
+  padding: 0 5px;
+  display: inline-block;
+}
