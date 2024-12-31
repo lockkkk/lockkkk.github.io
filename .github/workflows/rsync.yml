@@ -1,8 +1,9 @@
-name: DEPLOY_REMOTE
+name: deploy_rsync
 on:
+  workflow_dispatch:
   push:
     branches:
-    - build
+    - 'build'
 
 jobs:
   deploy:
