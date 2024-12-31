@@ -70,7 +70,7 @@ article .header {
 }
 
 #photo {
-  max-width: 50%;
+  height: 100%;
   max-height: 300px;
   margin: auto 10px;
   order: 1;
