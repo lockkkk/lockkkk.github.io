@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v1
+    - uses: actions/checkout@v4
     - uses: haskell-actions/setup@v2
       with:
         ghc-version: '9.2.8' # Exact version of ghc to use
@@ -34,10 +34,11 @@ jobs:
         stack exec site build
       
     - name: Checkout build branch
-      uses: actions/checkout@v1
+      uses: actions/checkout@v4
       with:
         ref: build
         clean: false
+        token: ${{ secrets.PUSH_PAT }}
 
         
     - name: Copy to build branch
