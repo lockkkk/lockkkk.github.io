@@ -10,24 +10,24 @@
   site: 32nd IEEE International Conference on Network Protocols (ICNP'24)
   link: https://icnp24.cs.ucr.edu/
 -
+    name: "Ringleader: Efficiently Offloading Intra-Server Orchestration to NICs"
+    authors: Jiaxin Lin, Adney Cardoza, Tarannum Khan, Yeonju Ro, Brent Stephens, Hassan Wassel, Aditya Akella
+    site: 20th USENIX Symposium on Networked Systems Design and Implementation (NSDI'23)
+    link: https://www.usenix.org/conference/nsdi23
+    artifact: https://github.com/utnslab/RingleaderNIC
+    fileUrl: https://www.usenix.org/conference/nsdi23/presentation/lin
+-
+    name: "Towards Accelerating Data Intensive Application's Shuffle Process Using SmartNICs"
+    authors: Jiaxin Lin, Tao Ji, Xiangpeng Hao, Hokeun Cha, Yanfang Le, Xiangyao Yu, Aditya Akella 
+    site: ACM SIGMETRICS 2023 (SIGMETRICS'23)
+    link: https://www.sigmetrics.org/sigmetrics2023/
+    fileUrl: https://dl.acm.org/doi/10.1145/3589980
+-
   name: "LogNIC: A High-Level Performance Model for SmartNICs"
   authors: Zerui Guo, Jiaxin Lin, Yuebin Bai, Daehyeok Kim, Michael Swift, Aditya Akella, Ming Liu
   site: IEEE/ACM International Symposium on Microarchitecture (MICRO'23)
   link: https://microarch.org/micro56/
   fileUrl: https://dl.acm.org/doi/abs/10.1145/3613424.3614291
--
-  name: "Ringleader: Efficiently Offloading Intra-Server Orchestration to NICs"
-  authors: Jiaxin Lin, Adney Cardoza, Tarannum Khan, Yeonju Ro, Brent Stephens, Hassan Wassel, Aditya Akella
-  site: 20th USENIX Symposium on Networked Systems Design and Implementation (NSDI'23)
-  link: https://www.usenix.org/conference/nsdi23
-  artifact: https://github.com/utnslab/RingleaderNIC
-  fileUrl: https://www.usenix.org/conference/nsdi23/presentation/lin
--
-  name: "Towards Accelerating Data Intensive Application's Shuffle Process Using SmartNICs"
-  authors: Jiaxin Lin, Tao Ji, Xiangpeng Hao, Hokeun Cha, Yanfang Le, Xiangyao Yu, Aditya Akella 
-  site: ACM SIGMETRICS 2023 (SIGMETRICS'23)
-  link: https://www.sigmetrics.org/sigmetrics2023/
-  fileUrl: https://dl.acm.org/doi/10.1145/3589980
 -
   name: "PANIC: A High-Performance Programmable NIC for Multi-tenant Networks"
   authors: Jiaxin Lin, Kiran Patel, Brent Stephens, Anirudh Sivaraman, Aditya Akella
