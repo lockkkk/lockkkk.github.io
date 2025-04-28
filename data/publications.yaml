@@ -4,6 +4,8 @@
   authors: Jiaxin Lin*, Zhiyuan Guo*, Mihir Shah, Tao Ji, Yiying Zhang, Daehyeok Kim, Aditya Akella
   site: The 22nd USENIX Symposium on Networked Systems Design and Implementation (NSDI'25)
   link: https://www.usenix.org/conference/nsdi25
+  fileUrl: https://www.usenix.org/system/files/nsdi25-lin-jiaxin.pdf
+  artifact: https://github.com/utnslab/Alkali
 -
   name: "Balancing SDN Control Plane Availability and Traffic Engineering Efficiency in Data Centers"
   authors: Brian Chang, Keqiang He, Shawn Chen, Jiaxin Lin, Mingyang Zhang, Wenfei Wu, Aditya Akella
