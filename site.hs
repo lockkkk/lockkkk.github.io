@@ -124,11 +124,11 @@ main = do
                 news         <- return . take 5 =<< recentFirst =<< loadAll "news/*"
 
                 -- dirs
-                dirs         <- return . take 5 =<< recentFirst =<< loadAll "dirs/*"
+                dirs         <- loadBody "dirs/direction.md"
 
                 let indexCtx = listField  "publications" pubCtx         (wrapItemList publications)
                             <> listField  "news"         postCtx        (return news)
-                            <> listField  "dirs"         postCtx        (return dirs)
+                            <> listField  "dirs"         dirs        
                             <> listField  "experience"   expCtx         (wrapItemList experience)
                             <> listField  "awards"       timedCtx       (wrapItemList awards)
                             <> listField  "services"     timedCtx       (wrapItemList services)
@@ -145,7 +145,6 @@ main = do
         match "templates/*" $ compile templateBodyCompiler
 
         match "news/*"  $ compile $ pandocCompiler >>= relativizeUrls <$> (fmap inlineParagraph)
-        match "dirs/*"  $ compile $ pandocCompiler >>= relativizeUrls <$> (fmap inlineParagraph)
         match "pages/*" $ compile $ pandocCompiler >>= relativizeUrls
 
         match "data/*" $ compile getResourceString
