@@ -1,4 +1,4 @@
-Hi, I’m Jiaxin Lin. <span style="color:red">I’m an incoming assistant professor in the ECE Department at Cornell University, starting in Fall 2025.</span>
+I’m Jiaxin Lin. <span style="color:red">I’m an assistant professor in the ECE department at Cornell University, starting in Fall 2025.</span>
 
 I am currently a CS PhD student at the University of Texas at Austin. I am part of the [University of Texas Networked Systems (UTNS)](https://utns.cs.utexas.edu/) Lab. I am broadly interested networked systems, including in programmable network devices, next-generation interconnects, and systems for cloud computing.
 

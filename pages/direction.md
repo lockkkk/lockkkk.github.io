@@ -4,4 +4,4 @@
 
 - Architecture and applications of programmable network devices ([NSDI'23](https://www.usenix.org/conference/nsdi23/presentation/lin), [OSDI'20](https://www.usenix.org/conference/osdi20/presentation/lin), [SIGMETRICS'23](https://dl.acm.org/doi/10.1145/3589980)).
 
-- System support for robust, secure, and manageable heterogeneous cloud infrastructure.
+- System supports for robust, secure, and manageable heterogeneous cloud infrastructure.
