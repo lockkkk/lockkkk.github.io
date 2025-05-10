@@ -124,7 +124,7 @@ main = do
                 news         <- return . take 5 =<< recentFirst =<< loadAll "news/*"
 
                 -- dirs
-                dirs         <- loadBody "dirs/direction.md"
+                dirs         <- loadBody "pages/direction.md"
 
                 let indexCtx = listField  "publications" pubCtx         (wrapItemList publications)
                             <> listField  "news"         postCtx        (return news)
