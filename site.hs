@@ -128,11 +128,11 @@ main = do
 
                 let indexCtx = listField  "publications" pubCtx         (wrapItemList publications)
                             <> listField  "news"         postCtx        (return news)
-                            <> listField  "dirs"         dirs        
                             <> listField  "experience"   expCtx         (wrapItemList experience)
                             <> listField  "awards"       timedCtx       (wrapItemList awards)
                             <> listField  "services"     timedCtx       (wrapItemList services)
                             <> listField  "artworks"     (listCtx show) (wrapItemList artworks)
+                            <> constField "dirs"         dirs     
                             <> constField "about"        about
                             <> defaultContext
 
