@@ -6,7 +6,7 @@
   link: https://www.usenix.org/conference/nsdi25
   fileUrl: https://www.usenix.org/system/files/nsdi25-lin-jiaxin.pdf
   artifact: https://github.com/utnslab/Alkali
-  slides: /files/alkali-nsdi25-slides.pdf
+  slides: /files/Alkali_NSDI.pptx
 -
   name: "Balancing SDN Control Plane Availability and Traffic Engineering Efficiency in Data Centers"
   authors: Brian Chang, Keqiang He, Shawn Chen, Jiaxin Lin, Mingyang Zhang, Wenfei Wu, Aditya Akella
