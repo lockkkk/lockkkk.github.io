@@ -40,6 +40,7 @@ data Publication = Publication {
     link :: Maybe String,
     note :: Maybe String,
     artifact :: Maybe String
+    slides :: Maybe String
 } deriving (Generic, FromJSON)
 
 getFileUrl a = fmap ("/files/" ++) (file a) <|> fileUrl a
@@ -52,6 +53,7 @@ pubCtx = field       "name"     (mapBody name)
       <> optionField "link"     (mapBody (link :: Publication -> Maybe String)) 
       <> optionField "note"     (mapBody note) 
       <> optionField "artifact" (mapBody artifact) 
+      <> optionField "slides"   (mapBody slides) 
 
 -- Define of publication and publication context
 data Experience = Experience {

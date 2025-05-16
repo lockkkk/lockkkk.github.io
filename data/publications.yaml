@@ -6,11 +6,13 @@
   link: https://www.usenix.org/conference/nsdi25
   fileUrl: https://www.usenix.org/system/files/nsdi25-lin-jiaxin.pdf
   artifact: https://github.com/utnslab/Alkali
+  slides: /files/alkali-nsdi25-slides.pdf
 -
   name: "Balancing SDN Control Plane Availability and Traffic Engineering Efficiency in Data Centers"
   authors: Brian Chang, Keqiang He, Shawn Chen, Jiaxin Lin, Mingyang Zhang, Wenfei Wu, Aditya Akella
   site: 32nd IEEE International Conference on Network Protocols (ICNP'24)
   link: https://icnp24.cs.ucr.edu/
+  fileUrl: https://ieeexplore.ieee.org/abstract/document/10858573
 -
     name: "Ringleader: Efficiently Offloading Intra-Server Orchestration to NICs"
     authors: Jiaxin Lin, Adney Cardoza, Tarannum Khan, Yeonju Ro, Brent Stephens, Hassan Wassel, Aditya Akella
