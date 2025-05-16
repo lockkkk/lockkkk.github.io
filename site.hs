@@ -39,7 +39,7 @@ data Publication = Publication {
     fileUrl :: Maybe String,
     link :: Maybe String,
     note :: Maybe String,
-    artifact :: Maybe String
+    artifact :: Maybe String,
     slides :: Maybe String
 } deriving (Generic, FromJSON)
 
