@@ -10,5 +10,5 @@ I was a recipient of [2024 MIT EECS Rising Star](https://risingstars-eecs.mit.ed
 
 <!-- <span style="color:red">**I will be joining the ECE Department at Cornell University as a tenure-track Assistant Professor in Fall 2025.**</span> -->
 
-📌<span>**I am looking for self-motivated PhD students in CS and ECE with interests in networking, systems, programmable hardware, and compilers. If you're interested, please reach out via email!**</span>
+📌<span>**I am actively looking for self-motivated Ph.D. students in CS or ECE who are interested in networking, systems, architecture, or compilers. If you are interested in any of these areas, please reach out via email!**</span>
 
